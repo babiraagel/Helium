@@ -10,23 +10,26 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background: rgb(46, 44, 44);
+    color: white;
 }
 li {
     list-style: none;
 }
 button {
-    border: 1px solid #ccc;
+    
     background: transparent;
     border-radius: 50px;
     padding: 5px;
     cursor: pointer;
     transition: 0.3s;
+    
 }
 
 nav {
     display: grid;
     grid-template-columns: 30% 70%;
     padding: 15px;
+    font-size: 0.8;
 }
 
 nav ul {
@@ -44,7 +47,7 @@ section {
 }
 
 .section-text {
-    padding: 70px 20px;
+    padding: 70px 10px;
 }
 section img {
    
@@ -57,21 +60,63 @@ h1 {
 
 .section-text h3 {
     color: rgba(0, 0, 255, 0.89);
-    font-size: 2rem;
+    font-size: 1.2rem;
     letter-spacing: 1px;
 }  
 p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height:;
 
 }
 footer {
+    width: 100%;
     background: rgb(17, 17, 17);
-}
-
-footer {
+    color: white;
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+footer h3 {
+    font-size: 1rem;
+}
+
+.technology {
+    width: 40%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.technology button {
+    display: block;
+    align-items: center;
+    width: 30%;
+    margin: 5px;
+    padding: 10px;
+    background: rgba(75, 75, 187, 0.596);
     color: white;
+    border-radius: 5px;
+}
+
+.investor {
+    width: 60%;
+    padding: 10px;
+}
+.invest-logo {
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 10px;
+}
+.invest-logo img {
+    height: 60px;
+}
+
+*********media quories**********
+
+@media screen and (max-width: 1000px) {
+    .section {
+        display: block;
+    }
 }
